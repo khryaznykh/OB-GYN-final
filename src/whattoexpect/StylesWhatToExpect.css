@@ -1,0 +1,634 @@
+/*What to expect*/
+.what-to-expect {
+    background-color: #d2cfcf;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .what-to-image {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+  .what-to-image img {
+    margin-right: 50px;
+    margin-top: 50px;
+    mask: url(https://assets.codepen.io/1101822/circles-mask-whole.svg) no-repeat center;
+    max-width: 100%;
+    display: block;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  .header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    padding: 20px;
+    width: 70%;
+  }
+  .header h2 {
+    font-size: 4vw;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  .header p {
+    font-size: 1.6vw;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  .circles-three {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 70%;
+    margin-top: 15px;
+  }
+  .link-circle {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 40%;
+    overflow: visible;
+    background: #74ebd5;
+    background: linear-gradient(to right, #74ebd5 0%, #acb6e5 100%);
+    position: relative;
+    z-index: 1;
+  }
+  .link-circle::before,
+  .link-circle::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40%;
+    z-index: -1;
+  }
+  .link-circle::before {
+    background: linear-gradient(to bottom right, #f6d365 0%, #fda085 100%);
+    transform: rotate(7deg);
+  }
+  .link-circle::after {
+    background: linear-gradient(to top right, #84fab0 0%, #8fd3f4 100%);
+    transform: rotate(-7deg);
+  }
+  .circle {
+    background: #868c8f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 101%;
+    height: 101%;
+    overflow: visible;
+    border-radius: 40%;
+    position: relative;
+    z-index: 2;
+    font-family: "Montserrat", sans-serif;
+  }
+  .circle p {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /*ObGyn */
+  .page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #d2cfcf;
+    min-height: 100vh;
+  }
+  .heading-ob h1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+  }
+  .main-container-slides {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .ob-image {
+    padding: 10px;
+    position: relative;
+  }
+  .image-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .text-container {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .rectangle-container {
+    min-height: 100%;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .rectangle {
+    position: absolute;
+    width: 90px;
+    height: 250px;
+    border: 2px solid Black;
+    margin-left: 380px;
+    margin-top: -250px;
+    opacity: 80%;
+  }
+  .rectangle-two {
+    position: absolute;
+    width: 250px;
+    height: 90px;
+    border: 2px solid Black;
+    margin-left: 180px;
+    margin-top: -70px;
+    opacity: 80%;
+  }
+  .p-text {
+    text-align: start;
+    font-family: "Montserrat", sans-serif;
+  }
+  .btn {
+    width: 80px;
+    border: none;
+  }
+  
+  /*Blood work*/
+  .container-flip-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 590px;
+    height: 454px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    padding: 10px;
+  }
+  .title {
+    font-size: 3vw;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+  }
+  .flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: coral;
+  }
+  .flip-card-back {
+    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%, bisque 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-text {
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .hover-text {
+      opacity: 0.5;
+  }
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
+  }
+  .heading-text {
+    flex: 2;
+    margin-top: 8px;
+  }
+  .heading-text p {
+    width: 100%;
+    text-align: right;
+    font-size: 2vw;
+  }
+  .colortext {
+    font-size: 2.5vw;
+    color: #6c82e3;
+    font-weight: 800;
+    font-style: oblique;
+  }
+  .colortext-two {
+    font-size: 2.3vw;
+    color: #ac4c8c;
+    font-weight: 800;
+    font-style: oblique;
+  }
+  .colortext-three {
+    font-size: 2.2vw;
+    color: #FF7F50;
+    font-weight: 800;
+    font-style: oblique
+  }
+  .colortext-four {
+    font-size: 2.4vw;
+    color: #22bd5b;
+    font-weight: 800;
+    font-style: oblique
+  }
+
+  /*moving bars*/
+  .logo-holder {
+    background: #d2cfcf;
+    flex: 1;
+    width: 180px;
+    height: 220px;
+    position: relative;
+    margin: 0 auto ;
+    padding-top: 12px;
+    padding-bottom: 24px;
+    -webkit-transform: translateZ(0);
+  }
+  .bg {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    background: url(http://boutique.flarework.com/wp-content/themes/boutique/img/logo_large.png) center 0px no-repeat ;
+    background-size: contain;
+    -webkit-filter: drop-shadow(0px 6px 25px rgba(0,0,0,0.5));
+  }
+  .bar {
+    position: relative;
+    height: 8px;
+    background: #6a6a6a;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width:  0%;
+    top: 0px;
+    left: 18px;
+    margin-top: 8px;
+    box-shadow: 0 0 3px rgba(192,192,192,0.9);
+    animation: fill 3s infinite alternate, colors 5s infinite alternate;
+  }
+  .bar.fill1 {
+    animation: fill-1 3s infinite alternate, colors 5s infinite alternate;
+  }
+  .bar.fill2 {
+    animation:  fill-2 3s infinite alternate, colors 5s infinite alternate;
+  }
+  .bar.fill3 {
+    animation:  fill-3 3s infinite alternate, colors 5s infinite alternate;
+  } 
+  .bar.fill4 {
+    animation:  fill-4 3s infinite alternate, colors 5s infinite alternate;
+  }
+  .bar.fill5 {
+    animation:  fill-5 3s infinite alternate, colors 5s infinite alternate;
+  }
+  .bar.fill6 {
+    animation:  fill-6 3s infinite alternate, colors 5s infinite alternate;
+  }
+        
+  @keyframes fill {
+    0%   { width: 0; }
+    33%  { width: 5vw;}
+    66%  { width: 1.8vw;}
+    100% { width: 19vw; }
+  }
+  @keyframes fill-1 {
+    0%   { width: 0; }
+    33%  { width: 9vw;}
+    66%  { width: 3.8vw;}
+    100% { width: 28vw; }
+  }
+  @keyframes fill-2 {
+    0%   { width: 0; }
+    33%  { width: 1.6vw;}
+    66%  { width: 22vw;}
+    100% { width: 30vw; }
+  }
+  @keyframes fill-3 {
+    0%   { width: 0; }
+    33%  { width: 13vw;}
+    66%  { width: 4.5vw;}
+    100% { width: 20vw; }
+  }
+  @keyframes fill-4 {
+    0%   { width: 0; }
+    33%  { width: 18vw;}
+    66%  { width: 8vw;}
+    100% { width: 18vw; }
+  }
+  @keyframes fill-5 {
+    0%   { width: 0; }
+    33%  { width: 14vw;}
+    66%  { width: 8vw;}
+    100% { width: 24vw; }
+  }
+  @keyframes fill-6 {
+    0%   { width: 0; }
+    33%  { width: 14vw;}
+    66%  { width: 6vw;}
+    100% { width: 29vw; }
+  }
+  @keyframes colors {
+    0% { background-color: #6c82e3;}
+    50% { background-color: #ac4c8c}
+    100% { background-color: #FF7F50;}
+  }
+
+  /*geneteics*/
+  .genetics-main {
+    background-color: #D2CFCF;
+    padding-top: 1px;
+  }
+  .box-angled {
+    width: 500px;
+    height: 600px;
+    background-color: rgba(246, 212, 101, 0.5);
+    rotate: -30deg;
+    margin-left: 100px;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .box-angled-two {
+    width: 500px;
+    height: 600px;
+    background-color: rgba(246, 212, 101, 0.5);
+    rotate: 30deg;
+    margin-left: 50%;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .genetics-first {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    align-items: center;
+    z-index: 3;
+  }
+  .genetics-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    z-index: 3;
+  }
+  .genetics-header {
+    margin-left: 50px;
+    width: 90%;
+    z-index: 3;
+  }
+  .header-left {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-bottom: -10px;
+  }
+  .header-right {
+    display: flex;
+    justify-content: end;
+    width: 100%
+  }
+  i {
+    color: #99a7e6;
+  }
+  .color-text {
+    font-style: italic;
+    color: #6c82e3;
+    font-size: larger;
+  }
+  .header-left h4 {
+    font-family: "Montserrat", sans-serif;
+    text-align: right;
+    font-size: 1.4vw;
+    letter-spacing: -1px;
+    margin-top: 20px;
+    font-style: oblique;
+  }
+  .header-right h2 {
+    font-family: "Montserrat", sans-serif;
+    text-align: right;
+    font-size: 3.6vw;
+    margin-left: -10%;
+    font-weight: 600;
+    width: 80%;
+  }
+  .genetics-text p {
+    text-align: right;
+  }
+  .genetics-text span {
+    text-align: left;
+  }
+  .goback-position {
+    display: flex;
+    justify-content: center;
+  }
+  
+@media all and (max-width: 1100px) {
+  .circles-three {
+    width: 100%;
+  }
+  .what-to-image img {
+    width: 400px;
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+  .link-circle {
+    height: 200px;
+    width: 200px;
+  }
+  .p-text {
+    font-size: 12px;
+  }
+  .box-angled {
+    width: 300px;
+    height: 400px;
+    margin-top: 45px;
+  }
+  .box-angled-two {
+    width: 300px;
+    height: 400px;
+  }
+}
+@media all and (max-width: 800px) {
+  .image-text {
+    flex-wrap: wrap-reverse;
+  }
+  .rectangle-container{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .text-container{
+    width: 100%;
+    margin-left: 5px;
+  }
+  .genetics-text {
+    width: 50%;
+  }
+  .genetics-text span, p {
+    font-size: 14px;
+  }
+  .heading {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .bar {
+    margin-top: 5px;
+  }
+}
+@media all and (max-width: 500px) {
+  .circles-three {
+    flex-wrap: wrap;
+  }
+  .what-to-image{
+    margin-top: -20px;
+  }
+  .link-circle {
+    height: 150px;
+    width: 150px;
+  }
+  .circle p {
+    font-size: 10px;
+  }
+  .ob-image{
+    width: 300px;
+  }
+  .rectangle {
+    width: 50px;
+    height: 150px; 
+    margin-left:75%;
+    margin-top: -43%;
+  }
+  .rectangle-two {
+    width: 150px;
+    height: 50px; 
+    margin-left: 35%;
+    margin-top: -7%;
+  }
+  .btn {
+    width: 40px;
+  }
+  .btn img {
+    width: 30px;
+  }
+  .slide-whole {
+  width: 80%;
+  }
+  .btn-goback {
+  width: 200px;
+  margin-bottom: 20px;
+  }
+  .genetics-first {
+    flex-direction: column-reverse;
+    margin: 0px;
+  }
+  .genetics-text {
+    width: 90%;
+    margin-right: 0px;
+  }
+  .genetics-text span, p {
+    font-size: 11px;
+  }
+  .genetics-text img {
+    width: 90%;
+  }
+  .genetics-header {
+    margin-left: 0px;
+  }
+  .bar {
+    height: 5px;
+    margin-top: 4px;
+  }
+  .box-angled {
+    width: 160px;
+    height: 220px;
+    margin-left: 10px;
+  }
+  .box-angled-two {
+    width: 160px;
+    height: 220px;
+  }
+}
+@media all and (max-width: 400px) {
+  .p-text {
+    font-size: 10px;
+  }
+  .ob-image{
+    width: 250px;
+  }
+  .rectangle {
+    width: 40px;
+    height: 120px; 
+    margin-left:72%;
+  }
+  .rectangle-two {
+    width: 120px;
+    height: 40px; 
+    margin-left: 39%;
+  }
+  .bar {
+    height: 4px;
+    margin-top: 3px;
+    left:-10px;
+  }
+  .box-angled-two {
+ margin-left: 30%;
+  }
+}
+@media all and (max-width:320px){
+  .rectangle {
+    margin-left: 85%;
+  }
+  .rectangle-two {
+    margin-left: 49%;
+  }
+}
+  

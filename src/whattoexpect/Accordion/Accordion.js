@@ -1,7 +1,5 @@
-
 import { AccordionItem } from './AccordionItem';
 import { GeneticsData } from './Genetics-data';
-
 import './AccordionStyle.css'
 
 export const Accordion = () => {
@@ -13,7 +11,10 @@ export const Accordion = () => {
                 test = {item.test} 
                 method = {item.method}
                 invasive = {item.invasive}
-                results = {item.results}/>
+                results = {item.results}
+                repeat = {item.repeat}
+                type={item.type}
+                image={item.image}/>
         )})}
         </div>
     )

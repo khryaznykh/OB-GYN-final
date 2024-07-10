@@ -1,7 +1,7 @@
-const FeedbackShow = ({feedbackBank}) =>{
+const FeedbackShow = ({feedbackBankNew}) =>{
     return (
         <div className="position-feedback">
-            {feedbackBank.map (({name, text, id}) => {
+            {feedbackBankNew.map (({name, text, id}) => {
                 return(
                 <div class="card-feedback">
                     <div className="circle-feedback"></div>

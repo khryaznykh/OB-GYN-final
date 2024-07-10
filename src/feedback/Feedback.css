@@ -1,0 +1,244 @@
+.calculatormain-container {
+    background-color: #D2CFCF;
+    padding-top: 5px;
+    width: 100%;
+}
+.feedback-text-container {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    z-index: 3;
+}
+.big-one {
+    font-size: 2.2vw;
+    z-index: 3;
+}
+.big-two {
+    font-size: 2.1vw;
+    z-index: 3;
+}
+.big-three {
+    font-size: 2vw;
+    z-index: 3;
+}
+.big-four {
+    font-size: 1.8vw;
+    z-index: 3;
+}
+.circle-background {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    opacity: 0.5;
+    position: absolute;
+    margin-right: 50px;
+    margin-top: 50px;
+    background-color: rgb(176, 230, 51, 0.5);
+}
+.circle-background-container{
+    display: flex;
+    justify-content: end;
+    z-index: 1;
+}
+.image-input-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    z-index: 3;
+    padding: 50px;
+}
+.feedback-image-container, .feedbackshow-container {
+    z-index: 3;
+    flex:1;
+}
+.feedback-image {
+    margin-left: 100px;
+    mask: url('mask-10.svg') no-repeat
+    left ;
+    mask-size: contain;
+    max-width: 100%;
+    display: block;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    z-index: 3;
+} 
+
+/*input*/
+.input-enter-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    font-size: 1.4vw;
+}
+.input-title {
+    margin-top: 15px;
+    font-size: 2.0vw;
+}
+input, textarea {
+    background-color: #D2CFCF;
+    border: black solid 2px;
+    width: 100%;
+    font-size: 1.4vw;
+    font-family: "Montserrat", sans-serif;
+}
+.feedback-submit {
+    margin-top: 25px;
+    margin-left: 50px;
+    padding: 30px;
+
+}
+.card-feedback {
+    margin-right: 80px;
+    margin-top: 50px;
+    z-index: 3;
+}
+
+/*feedbackshow*/
+.card-feedback {
+    width: 190px;
+    height: 254px;
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+    
+  }
+  .position-feedback {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
+  .card-feedback-inner {
+    width: inherit;
+    height: inherit;
+    background: rgba(180, 65, 65, 0.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;  
+  }
+  .card-feedback-text {
+    padding: 15px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card-feedback-text p {
+    font-size: 1.2vw;
+  }
+  .card-feedback:hover {
+    transform: scale(1.04) rotate(-1deg);
+  }
+  .circle-feedback {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#2dde65, #b6cfc0);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+  }
+  .circle-feedback:nth-child(1) {
+    top: -25px;
+    left: -25px;
+  }
+  .circle-feedback:nth-child(2) {
+    bottom: -25px;
+    right: -25px;
+    animation-name: move-down1;
+  }
+  
+  @keyframes move-up6 {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(10px);
+    }
+  }
+  
+
+  @media all and (max-width: 1100px) {
+    .feedback-submit {
+    margin-left: 50px;
+    }
+  }
+  @media all and (max-width:800px) {
+    .feedback-image {
+        margin-left: 50px;
+    }
+    .circle-background {
+        width:200px;
+        height: 200px;
+    }
+  }
+  @media all and (max-width:800px) {
+  .image-input-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feedback-image {
+    margin-left: 20px;
+  }
+  .input-enter-container {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .feedback-submit {
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+  .card-feedback-text p {
+    font-size: 12px;
+  }
+  .big-one {
+    font-size: 18px;
+  }
+  .big-two {
+    font-size: 16px;
+  }
+  .big-three {
+    font-size: 14px;
+  }
+  .big-four {
+    font-size: 12px;
+  }
+  .colortext {
+    font-size: 20px;
+  }
+  .colortext-two {
+    font-size: 18px;
+  }
+  .colortext-three {
+    font-size: 16px;
+  }
+  .colortext-four {
+    font-size: 14px;
+  }
+  .card-feedback {
+    margin-right: 20px;
+    margin-top: 40px;
+  }
+}
+  @media all and (max-width:500px) {
+    .circle-background {
+        width:150px;
+        height: 150px;
+    }
+  }
+  @media all and (max-width:350px) {
+    .circle-background {
+        width:100px;
+        height: 100px;
+    }
+  }

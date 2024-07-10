@@ -1,6 +1,4 @@
-
 import Swal from 'sweetalert2'; 
-import './App.css';
 
 function SweetAlertDate() {
     Swal.fire({
@@ -11,6 +9,5 @@ function SweetAlertDate() {
         imageHeight: 200,
         imageAlt: "Custom image"
       });
-         
-      }
+  }
 export default SweetAlertDate;
