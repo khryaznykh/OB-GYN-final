@@ -1,3 +1,15 @@
+### PREGNANCY website that collected major informaation about pregnancy development, OB/GYN visits, and what to expect during 40 week journey
+
+Front-end application oriented to provide major information about pregnancy development and what to expect during OB/GYN visits.
+
+## Technologies used
+- React multipage project
+- Routing done using React Router
+- Animations done using GSAP and Framer Motion
+- SweetAlert is used for pop-up notifications
+
+Some of the challenges that I faced where related to updating and displaying new feedback on the screen. I also would like to add more relevant information based of peoples feedbacks and suggestions.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +80,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+If you will have any issues with this project please feel free to contact me katehryaznykh@gmail.com, in subject put GitHub question/issue
+
+This project can be used in learning/training purposes only
