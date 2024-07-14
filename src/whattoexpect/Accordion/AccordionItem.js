@@ -13,7 +13,7 @@ export const AccordionItem = ({key, test, method, image,  type, invasive, result
         <div className="accordion-position">
             <div className={`accordion-main ${isOpen ? "active" : "default"}`}  onClick={handleIsOpen}  >
                 <div className="accordion-label">
-                    <img className="image-tube" src="https://cdn-icons-png.flaticon.com/512/3439/3439765.png" width={50}/>
+                    <img className="image-tube" src="https://cdn-icons-png.flaticon.com/512/3439/3439765.png" alt="tube" width={50}/>
                     <p className="test-name">{test}</p>
                 </div>
                 <img className="image-tube" src={isOpen ? "https://img.icons8.com/?size=100&id=114091&format=png&color=000000" : "https://img.icons8.com/?size=100&id=1501&format=png&color=000000"} alt="button" width={50}/>
@@ -24,7 +24,7 @@ export const AccordionItem = ({key, test, method, image,  type, invasive, result
                     initial={{opacity:0, y:-70}}
                     whileInView={{opacity:1, y:0, transition:{ ease: "easeOut", duration:1, staggerChildren:0.5}}}
                     viewport={{once: true}}>
-                    <img className="image-test" src={image}/>
+                    <img className="image-test" src={image} alt="accordion"/>
                     <motion.ul
                     initial={{opacity:0, y:-70}}
                     whileInView={{opacity:1, y:0, transition:{ ease: "easeOut", duration:1}}}

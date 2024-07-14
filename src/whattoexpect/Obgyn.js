@@ -48,7 +48,7 @@ const visitNext = () => {
                 <div className="image-text">
                     <div className="rectangle-container">
                         <div>
-                            <img className="ob-image" src={image} width={450} alt="image"/>
+                            <img className="ob-image" src={image} width={450} alt="OB/GYN"/>
                             <div className="rectangle"></div>
                                 <div className="rectangle-two"></div>
                             </div>

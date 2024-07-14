@@ -1,6 +1,4 @@
 import { useNavigate } from "react-router";
-// import { GeneticsData } from "./Accordion/Genetics-data";
-import { useState } from "react";
 import { Accordion } from './Accordion/Accordion';
 import { motion } from "framer-motion";
 
@@ -8,8 +6,6 @@ import './Accordion/AccordionStyle.css';
 
 function Genetics () {
     const navigate = useNavigate();
-    const [isOpen, setIsOpen] = useState(false);
-    const text = ""
 
     return (
         <div className="genetics-main">
@@ -37,7 +33,7 @@ function Genetics () {
                     initial={{y:-70}}
                     whileInView={{ y:0, transition:{ ease: "easeOut", duration:1, delay:0.3}}}
                     viewport={{once: true}}>
-                        <img  className="genetics-text" src="https://www.researchgate.net/profile/Anton-Bonne-2/publication/333798532/figure/fig2/AS:769983407738880@1560589758792/Figuur-2-Voorstelling-van-cffDNA-en-maternaal-cfDNA-in-de-maternale-circulatie-De.jpg" width={600}/>
+                        <img  className="genetics-text" src="https://www.researchgate.net/profile/Anton-Bonne-2/publication/333798532/figure/fig2/AS:769983407738880@1560589758792/Figuur-2-Voorstelling-van-cffDNA-en-maternaal-cfDNA-in-de-maternale-circulatie-De.jpg" alt="genetics" width={600}/>
                     </motion.div>
                 </div>
                 <div className="box-angled-two"></div>
@@ -46,7 +42,7 @@ function Genetics () {
                         initial={{opacity:0, y:-70}}
                         whileInView={{opacity:1, y:0, transition:{ ease: "easeOut", duration:1,delay:0.3}}}
                         viewport={{once: true}}>
-                        <img className="genetics-text"   src="https://images.unsplash.com/photo-1489087584469-437d40177a45?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width={600}/>
+                        <img className="genetics-text"   src="https://images.unsplash.com/photo-1489087584469-437d40177a45?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="genetics" width={600}/>
                     </motion.div>
                     <motion.div className="genetics-text text-two" 
                         initial={{opacity:0, y:-70}}

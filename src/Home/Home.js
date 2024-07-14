@@ -36,7 +36,7 @@ function Home() {
           <div className="tab-two">
             <motion.div className="tab-two-text"
                 initial={{y:-70}}
-                whileInView={{y:0, y:0, transition:{ ease: "easeOut", duration:1}}}
+                whileInView={{y:0, transition:{ ease: "easeOut", duration:1}}}
                 viewport={{once: false, amount: 0.1}}>
               <p className="mainText">Welcome to our website where we tried to collect the major information for the expectant moms!</p>
               <p className="mainText-small">If you still have any other questions that you think would be helpful for our visitors, don't hesitate and contact us!</p>
@@ -84,7 +84,7 @@ function Home() {
             initial={{opacity:0, y:-70}} 
             whileInView={{opacity:1, y:0, transition:{ ease: "easeOut", duration:1}}}
             viewport={{once: true}}>
-          <img className="image" src="https://images.unsplash.com/photo-1510154221590-ff63e90a136f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width={400}/>
+          <img className="image" src="https://images.unsplash.com/photo-1510154221590-ff63e90a136f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="feet" width={400}/>
         </motion.div>
 
         <motion.div className="datepicker-form tab"

@@ -6,12 +6,11 @@
 }
 .accordion-main {
     width: 93%;
-    padding: 10px;
+    padding: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 5px; 
-    padding: 0.9rem 1.8rem;
     font-size: 16px;
     font-weight: 700;
     border: 3px solid #97BDE4;

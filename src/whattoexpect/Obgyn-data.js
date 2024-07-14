@@ -1,4 +1,3 @@
-import {foto} from "./preg-first.png"
 export const ObgynData = [
     {
         id:1,
@@ -15,7 +14,6 @@ export const ObgynData = [
     },
     {
         id:2,
-        // https://th.bing.com/th/id/OIF.D0lvdpHvxX3qIABzN3Bntw?rs=1&pid=ImgDetMain
         image: "https://www.practicalmommy.com/wp-content/uploads/2020/01/scharlach-in-der-schwangerschaft-1-1024x683.jpeg",
         title: "Cheking your bloodpressure",
         text: "Blood pressure, the force of blood that pushes against the walls of your arteries—also known as hypertension—is one of the most closely monitored vitals throughout your pregnancy and after delivery. ",
@@ -26,8 +24,6 @@ export const ObgynData = [
     },
     {
         id:3,
-        // image: 'https://images.ctfassets.net/6m9bd13t776q/3F0N54dcl1iBEGG27AiIoz/a24237a8c901cb8ef452d6eae16458a8/Pregnancy_Weight_Gain_chart.png?q=75',
-        // image: 'https://wpcdn.us-east-1.vip.tn-cloud.net/www.tulsakids.com/content/uploads/2022/08/h/t/gettyimages-1322389226-1024x683.jpg',
         image: 'https://th.bing.com/th/id/OIP.71VyT6pQMWNQgxZPrG01vwHaE8?rs=1&pid=ImgDetMain',
         title: "Assesing your weight gain",
         text: "Though it's by far an exact science, and every pregnancy is different, there are guidelines you can follow to track your pregnancy weight by week and by trimester so you know the general pace you can expect to follow.",
@@ -44,16 +40,10 @@ export const ObgynData = [
         text: "TThe fetal heart rate is the number of times your baby's heart beats per minute – how fast it's beating. A handheld Doppler device is what your doctor or midwife will use to check your baby's heart rate at your prenatal visits. ",
         texttwo: "Healthcare providers measure fetal heart rate by the number of fetal (baby) heartbeats per minute (BPM) during pregnancy. This measurement helps healthcare providers determine the well-being of the fetus during prenatal visits or labor.For most of your pregnancy, the fetal heart rate will average between 110 and 160 BPM.",
         textthree: "But the rate doesn't stay the same. It changes throughout pregnancy and even throughout the day sometimes.Fetal heart rate can vary throughout the day and night by as much as five to 25 beats per minute. This is due to a fetus's activity level.",
-        // textfour: "You may have heard that a fetus' heart rate can tell you whether you're having a boy or girl, because girls have a faster heart rate than boys. But science doesn't back this up, at least in early pregnancy.",
-        
         textfour: "Weeks 5 to 7: A baby's heart starts to develop around the fifth week of pregnancy. In this early stage, the heart rate starts slow (between 90 and 110 BPM).",
         textfive: "Week 8 to 12: The heart rate speeds up and averages 140 to 170 BPM by week 9. By week 12, the rate slows down a bit",
         textsix: "Week 13 to 26: Throughout most of the pregnancy, the average is 110 to 160 beats per minute.",
         textseven: "Week 27 to 40: During the last trimester, the fetal heart rate continues to average 110 to 160 BPM. However, it drops slightly in the last 10 weeks. In general, it moves toward the lower end of this range the closer you get to your due date."
-        
-         
-
-
     },
     {
         id:5,
