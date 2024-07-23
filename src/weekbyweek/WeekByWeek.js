@@ -3,13 +3,13 @@ import {motion} from 'framer-motion';
 import "./StylesWeeks.css";
 import { useState } from "react";
 import PregWeeks from "./PregWeeks";
-import GsapText from "./GsapText";
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { TextPlugin } from "gsap/TextPlugin";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
-
+gsap.registerPlugin(TextPlugin);
 
 function WeekByWeek () {
     const weeks = PregWeeks;
@@ -30,10 +30,19 @@ function WeekByWeek () {
     const filterAll = (id) => {
         setSorted(weeks)
     }
+    useGSAP(
+        ()=> {
+            const tl = gsap.timeline({delay:0, stagger: 0.5});
+                tl.to(".colortext", {duration: 2, text:" major information"});
+                tl.to(".colortext-three", {duration: 1.5, text:" week by week"})
+        })
 
     return (
         <div className="weeks-container">
-            <GsapText/>
+            <div className="weeks-text-main" >
+                <h1>We've tried to collect<span className="colortext"> </span> on pregnancy development <br/> <span className="colortext-three"></span> </h1>
+                <p>Just click on the week that you want to check and enjoy</p>
+            </div>
             <div className="buttons">
                 <button className="buttonWeek" onClick={()=>filterFirst(weeks.id)}>First Trimester</button>
                 <button className="buttonWeek" onClick={()=>filterSecond(weeks.id)}>Second Trimester</button>
