@@ -26,14 +26,14 @@ function App() {
         <Navbars/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/Week' element={<WeekByWeek/>}/>
+          <Route path='/WeekByWeek' element={<WeekByWeek/>}/>
           <Route path='/WhatToExpect' element={<WhatToExpect/>}/>
-          <Route path="/Feedback" element={<Calculator/>}/>       
-          <Route path='/Home' element={<ContactUs/>}/>
-          <Route path='/Week/:title' element={<WeeksSlides/>}/>
-          <Route path="/WhatToExpect" element={<Obgyn/>}/>
-          <Route path="/WhatToExpect" element={<Genetics/>}/>
-          <Route path="/WhatToExpect" element={<Blood/>}/>
+          <Route path="/Calculator" element={<Calculator/>}/>       
+          <Route path='/ContactUs' element={<ContactUs/>}/>
+          <Route path='/WeeksSlises/:title' element={<WeeksSlides/>}/>
+          <Route path="/Obgyn" element={<Obgyn/>}/>
+          <Route path="/Genetics" element={<Genetics/>}/>
+          <Route path="/Blood" element={<Blood/>}/>
         </Routes>
   </Router>
   </div>
