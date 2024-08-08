@@ -9,7 +9,7 @@ function Navbars() {
         <Link className="menuItem" to="/">HOME</Link>
         <Link className="menuItem" to="/Week">Week by Week</Link>
         <Link className="menuItem" to="/WhatToExpect">What to Expect</Link>
-        <Link className="menuItem" to="/Calculator">Feedback</Link>
+        <Link className="menuItem" to="/Feedback">Feedback</Link>
       </nav>
     )
 }
