@@ -14,7 +14,7 @@ import WeeksSlides from "./Week/WeeksSlides";
 import Obgyn from "./WhatToExpect/Obgyn";
 import Genetics from "./WhatToExpect/Genetics";
 import Blood from "./WhatToExpect/Blood";
-import Calculator from "./Feedback/Calculator";
+import Calculator from "./FeedbackNew/Calculator";
 import Navbars from "./Navbars";
 import ScrollToTop from "./ScrollToTop";
 
