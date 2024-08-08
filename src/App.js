@@ -6,14 +6,14 @@ import {
 
 import './style/App.css';
 import React from "react";
-import WeekByWeek from './WeekByWeek/WeekByWeek';
-import WhatToExpect from "./whattoexpect/WhatToExpect";
+import WeekByWeek from './Week/WeekByWeek';
+import WhatToExpect from "./WhatToExpect/WhatToExpect";
 import Home from "./Home/Home";
 import ContactUs from "./Home/ContactUs";
-import WeeksSlides from "./WeekByWeek/WeeksSlides";
-import Obgyn from "./whattoexpect/Obgyn";
-import Genetics from "./whattoexpect/Genetics";
-import Blood from "./whattoexpect/Blood";
+import WeeksSlides from "./Week/WeeksSlides";
+import Obgyn from "./WhatToExpect/Obgyn";
+import Genetics from "./WhatToExpect/Genetics";
+import Blood from "./WhatToExpect/Blood";
 import Calculator from "./Feedback/Calculator";
 import Navbars from "./Navbars";
 import ScrollToTop from "./ScrollToTop";
@@ -26,11 +26,11 @@ function App() {
         <Navbars/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/WeekByWeek/*' element={<WeekByWeek/>}/>
+          <Route path='/Week' element={<WeekByWeek/>}/>
           <Route path='/WhatToExpect' element={<WhatToExpect/>}/>
           <Route path="/Calculator" element={<Calculator/>}/>       
           <Route path='/ContactUs' element={<ContactUs/>}/>
-          <Route path='/WeekByWeek/:title' element={<WeeksSlides/>}/>
+          <Route path='/Week/:title' element={<WeeksSlides/>}/>
           <Route path="/Obgyn" element={<Obgyn/>}/>
           <Route path="/Genetics" element={<Genetics/>}/>
           <Route path="/Blood" element={<Blood/>}/>
