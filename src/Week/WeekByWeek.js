@@ -54,7 +54,7 @@ function WeekByWeek () {
             {sorted.map((element)=>{
                 const {id, image, heading, message} = element;
                 return(
-                    <Link className="link" to={`/Week/${element.title}`}>
+                    <Link className="link" to={`/WeeksSlides/${element.title}`}>
                     <motion.div className="weekCard" key={id} 
                     initial={{opacity:0, y:30}} 
                     whileInView={{opacity:1, y:0, transition:{ease: "easeOut", duration:0.5}}}

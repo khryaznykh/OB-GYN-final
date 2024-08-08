@@ -7,9 +7,9 @@ function Navbars() {
         <img src={logo} width={80} alt="logo"/>
         </div>
         <Link className="menuItem" to="/">HOME</Link>
-        <Link className="menuItem" to="/Week">Week by Week</Link>
+        <Link className="menuItem" to="/WeekByWeek">Week by Week</Link>
         <Link className="menuItem" to="/WhatToExpect">What to Expect</Link>
-        <Link className="menuItem" to="/Feedback">Feedback</Link>
+        <Link className="menuItem" to="/Calculator">Feedback</Link>
       </nav>
     )
 }
