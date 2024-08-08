@@ -1,8 +1,8 @@
 import Video from "../Video";
-import dataFrontMain from "../dataFrontMain";
+import dataFrontMain from "../data/dataFrontMain";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import SweetAlert from "./SweetAlert";
 import SweetAlertCongrats from "./SweetAlertCongrats";
 import SweetAlertWeeks from "./SweetAlertWeeks";
@@ -108,7 +108,7 @@ function Home() {
                     {diff > 0 ? <SweetAlertWeeks days={diff} /> :
                         diff < 0 ? <SweetAlert /> :
                             diff === 0 ? <SweetAlertCongrats /> :
-                                isNaN(diff) ? <SweetAlertDate /> : ""}
+                                diff === null ? <SweetAlertDate /> : ""}
                 </div>
         )}
       </div>

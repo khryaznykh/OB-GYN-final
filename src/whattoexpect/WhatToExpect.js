@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './StylesWhatToExpect.css';
+import '../style/StylesWhatToExpect.css';
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
 

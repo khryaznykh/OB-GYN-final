@@ -3,7 +3,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import InputFeedback from "./InputFeedback";
 import { v4 as uuidv4 } from 'uuid';
 import FeedbackShow from "./FeedbackShow";
-import './Feedback.css';
+import '../style/Feedback.css';
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
 

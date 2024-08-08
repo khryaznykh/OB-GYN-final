@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import {motion} from 'framer-motion';
-import "./StylesWeeks.css";
+import "../style/StylesWeeks.css";
 import { useState } from "react";
-import PregWeeks from "./PregWeeks";
+import PregWeeks from "../data/PregWeeks";
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

@@ -1,4 +1,4 @@
-import PregWeeks from "./PregWeeks";
+import PregWeeks from "../data/PregWeeks";
 import { useNavigate, useParams } from "react-router";
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import { BloodData } from "./Blood-data";
+import { BloodData } from "../data/Blood-data";
 import { motion } from "framer-motion";
 import BloodGsapText from "./BloodGsapText";
 

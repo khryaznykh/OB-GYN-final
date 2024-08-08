@@ -1,38 +1,29 @@
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
-
-import './App.css';
+import './style/App.css';
 import React from "react";
-import WeekByWeek from './weekbyweek/WeekByWeek';
+import WeekByWeek from './WeekByWeek/WeekByWeek';
 import WhatToExpect from "./whattoexpect/WhatToExpect";
-import logo from "./preg-logo.png";
 import Home from "./Home/Home";
 import ContactUs from "./Home/ContactUs";
-import WeeksSlides from "./weekbyweek/WeeksSlides";
+import WeeksSlides from "./WeekByWeek/WeeksSlides";
 import Obgyn from "./whattoexpect/Obgyn";
 import Genetics from "./whattoexpect/Genetics";
 import Blood from "./whattoexpect/Blood";
-import Calculator from "./feedback/Calculator";
+import Calculator from "./Feedback/Calculator";
+import Navbars from "./Navbars";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
     return (
-    <div>
+    <div className="mainpage">
       <Router>
-        <nav className="menu">
-          <div className="circle-menu">
-          <img src={logo} width={80} alt="logo"/>
-          </div>
-          <Link className="menuItem" to="/">HOME</Link>
-          <Link className="menuItem" to="/WeekByWeek">Week by Week</Link>
-          <Link className="menuItem" to="/WhatToExpect">What to Expect</Link>
-          <Link className="menuItem" to="/Calculator">Feedback</Link>
-        </nav>
-
+        <ScrollToTop/>
+        <Navbars/>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/WeekByWeek/*' element={<WeekByWeek/>}/>
@@ -45,8 +36,6 @@ function App() {
           <Route path="/Blood" element={<Blood/>}/>
         </Routes>
   </Router>
-
-  
   </div>
   );
 }

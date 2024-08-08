@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import { useState } from "react";
-import { ObgynData } from "./Obgyn-data";
+import { ObgynData } from "../data/Obgyn-data";
 import { motion } from "framer-motion";
 
 function Obgyn () {

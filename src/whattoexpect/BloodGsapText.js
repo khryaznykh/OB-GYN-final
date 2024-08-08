@@ -1,7 +1,7 @@
 import {useLayoutEffect, useRef } from "react";
 import {gsap} from "gsap";
 import SplitText from "gsap-trial/SplitText" ;
-import './StylesWhatToExpect.css';
+import '../style/StylesWhatToExpect.css';
 gsap.registerPlugin(SplitText);
 
 function BloodGsapText () {

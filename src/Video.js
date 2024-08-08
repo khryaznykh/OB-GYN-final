@@ -1,4 +1,4 @@
-import videoToPlay from "./video/video-pregnant.mp4";
+import videoToPlay from "./assets/video-pregnant.mp4";
 
 function Video() {
     
