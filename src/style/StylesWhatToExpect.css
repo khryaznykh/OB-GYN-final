@@ -627,10 +627,10 @@
 }
 @media all and (max-width:320px){
   .rectangle {
-    margin-left: 85%;
+    margin-left: 75%;
   }
   .rectangle-two {
-    margin-left: 49%;
+    margin-left: 43%;
   }
 }
   
