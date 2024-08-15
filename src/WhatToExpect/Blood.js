@@ -33,6 +33,7 @@ function Blood () {
                 <div className="bar"></div>
             </div>
             <BloodGsapText/>
+
         </div>
 
         <div className="container-flip-cards">

@@ -248,6 +248,7 @@
     width: 100%;
     text-align: right;
     font-size: 2vw;
+    line-height: 3px;
   }
   .colortext {
     font-size: 2.5vw;
