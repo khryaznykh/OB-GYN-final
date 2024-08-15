@@ -10,10 +10,7 @@ import { useGSAP } from "@gsap/react";
 const Calculator = () => {
     useGSAP(
         ()=> {
-        gsap.from ('.big-one', {y:-100, opacity:0, ease: "power1.inOut",duration:1.2})
-        gsap.from ('.big-two', {y:-150, opacity:0, ease: "power1.inOut",duration:1.4, delay:0.2})
-        gsap.from ('.big-three', {y:-200, opacity:0, ease: "power1.inOut",duration:1.6, delay: 0.4})
-        gsap.from ('.big-four', {y:-250, opacity:0, ease: "power1.inOut",duration:1.8, delay: 0.6})    
+            gsap.from ('p', {y:-200, duration:0.7, stagger: 0.1, opacity:0})
     }
     )
     const [feedbackBankNew, setFeedbackBankNew] = useState(() => {

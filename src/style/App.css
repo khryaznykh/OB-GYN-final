@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 .menu {
   padding: 2vw;
   display: flex;

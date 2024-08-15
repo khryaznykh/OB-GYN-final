@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 function WhatToExpect () {
     useGSAP(
         ()=> {
-            gsap.from ('.gsap-text', { y:-200, duration:1,stagger:0.3, opacity:0})
+            gsap.from ('.gsap-text', { y:-200, duration:0.7,stagger:0.1, opacity:0})
         }
     )
 
